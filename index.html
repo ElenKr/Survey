@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survey</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <h1>
+            freeCodeCamp Survey Form
+        </h1>
+        <h5>
+            Thank you for taking the time to help us improve the platform
+        </h5>
+        <section>
+
+       
+        <form id="myform" >
+            <div class="ena">
+                <label for="name">Name</label>
+                <input class="space" type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            
+            <div class="ena">
+                <label for="email">Email</label>
+                <input class="space" type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="ena">
+                <label for="age" >Age (optional)</label>
+                <input class="space" type="number" min=10 id="age" name="age" placeholder="Age">
+            </div>
+            <div class="ena">
+                <label for="sel">Which option best describes your current role</label>
+                <select name="sel" id="sel">
+                    <option val="" class="unchecked" disabled selected>Select current role</option>
+                    <option val="student">Student</option>
+                    <option val="fulljob">Full time job</option>
+                    <option val="fulljob">Full time job</option>
+                    <option val="fulllearner">Full time learner</option>
+                    <option val="nosay">Prefer not to say</option>
+                    <option val="Other">Other</option>
+                </select>
+            </div>
+            <div class="ena">
+                <span>Would you recommend freeCodeCamo to a friend?</span>
+                <div>
+                    <input type="radio" name="rec" value="defi" id="def" checked>
+                    <label for="def">Definitely</label>
+                </div>
+                <div>
+                    <input type="radio" name="rec" id="maybe" value="maybe">
+                    <label for="maybe">Maybe</label>
+                </div>
+                <div>
+                    <input type="radio" name="rec" value="notsure" id="notsure" >
+                    <label for="notsure">Not sure</label>
+                </div>
+            </div>
+            <div class="ena">
+                <span>What is your fanorite feature of freeCodeCamp?</span>
+                <select name="sel2" id="sel2">
+                    <option val="" class="unchecked" disabled selected>Select an option</option>
+                    <option val="challenges">Challenges</option>
+                    <option val="projects">Projects</option>
+                    <option val="community">Community</option>
+                    <option val="opensource">Open Source</option>
+                </select>
+            <div class="ena">
+                <span>What would you like to see improved? (Check all that apply)</span>
+                <div>
+                <input type="checkbox" name="front" id="front">
+                <label for="front">Front-end Projects</label>
+                </div>
+                <div>
+                <input type="checkbox" name="back" id="back">
+                <label for="back">Back-end Projects</label>
+                </div>
+                <div>
+                <input type="checkbox" name="data" id="data">
+                <label for="data">Data Visualization</label>
+                </div>
+                <div>
+                <input type="checkbox" name="chal" id="chal">
+                <label for="chal">Challenges</label>
+                </div>
+                <div>
+                <input type="checkbox" name="wiki" id="wiki">
+                <label for="wiki">Wiki</label>
+                </div>
+                <div>
+                <input type="checkbox" name="open" id="open">
+                <label for="open">Open Source Community</label>
+                </div>
+                <div>
+                <input type="checkbox" name="video" id="video">
+                <label for="video">Videos</label>
+                </div>
+            <div class="ena">
+                <span>Any suggestions?</span>
+                <textarea placeholder="Enter your comments here..." id="suggestions" name="suggestions" rows="4" cols="50" ></textarea>    
+            </div>
+            <button type="submit" class="ena" id="submit">Submit</button>
+            </div>
+
+        </form>
+    </section>
+    </body>
+</html>
